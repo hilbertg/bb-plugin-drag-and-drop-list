@@ -1,0 +1,247 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "dnd-list",
+    "friendlyName": "Drag and Drop List",
+    "description": "Drag and Drop List using @jhubbardsf/svelte-sortablejs",
+    "icon": "ViewList",
+    "settings": [
+      {
+        "type": "dataProvider",
+        "label": "Data Provider",
+        "key": "dataProvider",
+        "required": true
+      },
+      {
+        "type": "field",
+        "key": "orderColumn",
+        "label": "Order Column",
+        "required": true
+      },
+      {
+        "type": "field",
+        "key": "textColumn",
+        "label": "Text Column",
+        "required" : true
+      },
+      {
+        "type": "event",
+        "key": "onRelease",
+        "label": "On Release"
+      },
+      {
+        "section": true,
+        "name": "Text Style",
+        "settings": [
+          {
+            "type": "boolean",
+            "key": "isShowingOrderLbl",
+            "label": "Show Order Label?"
+          },
+          {
+            "type": "number",
+            "key": "orderLblSize",
+            "label": "Order Size px",
+            "defaultValue" : 24,
+            "dependsOn" : "isShowingOrderLbl"
+          },
+          {
+            "type": "color",
+            "key": "orderLblColor",
+            "label": "Order Color",
+            "dependsOn" : "isShowingOrderLbl"
+          },
+          {
+            "type": "number",
+            "key": "gapLbl",
+            "label": "Gap Order label",
+            "defaultValue" : 10,
+            "dependsOn" : "isShowingOrderLbl"
+          },
+          {
+            "type": "number",
+            "key": "lblSize",
+            "label": "Label Size px",
+            "defaultValue" : 24
+          },
+          {
+            "type": "color",
+            "key": "lblColor",
+            "label": "Label Color"
+          }
+        ]
+      },
+      {
+        "section": true,
+        "name": "Handle",
+        "settings": [
+          {
+            "type": "icon",
+            "key": "handleIcon",
+            "label": "Handle Icon",
+            "defaultValue" : "ri-drag-move-fill"
+          },
+          {
+            "type": "select",
+            "key": "handleSize",
+            "label": "Handle Size",
+            "defaultValue": "ri-3x",
+            "options": [
+                {
+                    "label": "XXS",
+                    "value": "ri-xxs"
+                },
+                {
+                    "label": "XS",
+                    "value": "ri-xs"
+                },
+                {
+                    "label": "Small",
+                    "value": "ri-sm"
+                },
+                {
+                    "label": "Medium",
+                    "value": "ri-1x"
+                },
+                {
+                    "label": "Large",
+                    "value": "ri-lg"
+                },
+                {
+                    "label": "XL",
+                    "value": "ri-xl"
+                },
+                {
+                    "label": "2Xl",
+                    "value": "ri-2x"
+                },
+                {
+                    "label": "3Xl",
+                    "value": "ri-3x"
+                },
+                {
+                    "label": "4XL",
+                    "value": "ri-4x"
+                },
+                {
+                    "label": "5Xl",
+                    "value": "ri-5x"
+                },
+                {
+                    "label": "6XL",
+                    "value": "ri-6x"
+                },
+                {
+                    "label": "7XL",
+                    "value": "ri-7x"
+                },
+                {
+                    "label": "8Xl",
+                    "value": "ri-8x"
+                },
+                {
+                    "label": "9Xl",
+                    "value": "ri-9x"
+                },
+                {
+                    "label": "10XL",
+                    "value": "ri-10x"
+                }
+            ]            
+          }
+        ]
+      },
+      {
+        "section": true,
+        "name": "Appearance",
+        "settings": [
+          {
+            "type": "color",
+            "key": "backgroundColor",
+            "label": "Background Color"
+          },
+          {
+            "type": "color",
+            "key": "ghostbgColor",
+            "label": "Ghost Color"
+          },
+          {
+            "type": "number",
+            "key": "animationTime",
+            "label": "Animation Time",
+            "defaultValue" : 150,
+            "min": 0
+          },
+          {
+            "type": "number",
+            "key": "gap",
+            "label": "Gap",
+            "defaultValue" : 10,
+            "min": 0
+          }
+        ]
+      },
+      {
+        "section": true,
+        "name": "Border",
+        "settings": [
+          {
+            "type": "color",
+            "key": "borderColor",
+            "label": "Border Color"
+          },
+          {
+            "type": "select",
+            "key": "borderRadius",
+            "label": "Border Radius",
+            "defaultValue": "0.25rem",
+            "options": [
+              {
+                "label": "None",
+                "value": "0"
+              },
+              {
+                "label": "Small",
+                "value": "0.25rem"
+              },
+              {
+                "label": "Medium",
+                "value": "0.5rem"
+              },
+              {
+                "label": "Large",
+                "value": "1rem"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "key": "borderWidth",
+            "label": "Border Width",
+            "defaultValue": "1px",
+            "options": [
+              {
+                "label": "None",
+                "value": "0"
+              },
+              {
+                "label": "Small",
+                "value": "1px"
+              },
+              {
+                "label": "Medium",
+                "value": "2px"
+              },
+              {
+                "label": "Large",
+                "value": "4px"
+              }
+            ]
+          }
+        ]
+      }
+      ]
+      }
+    
+}
