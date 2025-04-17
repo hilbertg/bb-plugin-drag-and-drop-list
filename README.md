@@ -6,27 +6,28 @@ Drag and Drop List using [svelte-sortablejs](https://github.com/jhubbardsf/svelt
 
 Find out more about [Budibase](https://github.com/Budibase/budibase).
 
+![Demo](images/demo1.png)
+
+![Demo](images/demo2.png)
+
 # Usage
 0. You need a table containing these columns (name can be random):
 
 - text for the label/text
 - number for the order (starts at 1)
 
+![Database setup](images/bb-setup-0.png)
+
 1. Insert a data provider and set it to the table.
 
-2. Insert the plugin as a child to the data provider.
+3. Insert the plugin as a child to the data provider.
 
-3. Set the settings acording to your needs.
+![Component tree setup](images/bb-setup-1.png)
 
-## Instructions
+5. Specifiy data provider, order column and label column. Set the rest acording to your needs.
 
-To build your new  plugin run the following in your Budibase CLI:
-```
-budi plugins --build
-```
+![Plugin setup](images/bb-setup-2.png)
 
-You can also re-build everytime you make a change to your plugin with the command:
-```
-budi plugins --watch
-```
+## Disclaimer
+Use at your own risk!
 
