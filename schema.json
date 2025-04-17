@@ -80,13 +80,13 @@
             "type": "icon",
             "key": "handleIcon",
             "label": "Handle Icon",
-            "defaultValue" : "ri-drag-move-fill"
+            "defaultValue" : "ri-menu-5-fill"
           },
           {
             "type": "select",
             "key": "handleSize",
             "label": "Handle Size",
-            "defaultValue": "ri-3x",
+            "defaultValue": "ri-2x",
             "options": [
                 {
                     "label": "XXS",
