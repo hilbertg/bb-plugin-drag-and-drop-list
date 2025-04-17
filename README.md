@@ -1,8 +1,8 @@
-# Dnd-list
+# Drag and Drop List
 This is a readme for your new Budibase plugin.
 
 # Description
-Drag and Drop List
+Drag and Drop List using [svelte-sortablejs](https://github.com/jhubbardsf/svelte-sortablejs) by [jhubbardsf](https://github.com/jhubbardsf)
 
 Find out more about [Budibase](https://github.com/Budibase/budibase).
 
