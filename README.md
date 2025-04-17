@@ -6,6 +6,9 @@ Drag and Drop List using [svelte-sortablejs](https://github.com/jhubbardsf/svelt
 
 Find out more about [Budibase](https://github.com/Budibase/budibase).
 
+![Demo](images/demo1.png)
+
+![Demo](images/demo2.png)
 
 # Usage
 0. You need a table containing these columns (name can be random):
